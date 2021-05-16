@@ -27,7 +27,7 @@ public class FragmentActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_fragement);
         getSupportFragmentManager().beginTransaction().replace(R.id.project_recruit, new ProjectFragment()).commit();
         projectFragment = new ProjectFragment();
         studyFragment = new StudyFragment();
@@ -68,8 +68,6 @@ public class FragmentActivity extends AppCompatActivity {
                 });
 
     }
-
-    Testing testing = new Testing();
 
 }
 

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">cosu</string>
+    <string name="title_activity_main">MainActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
