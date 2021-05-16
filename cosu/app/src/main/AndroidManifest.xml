@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cosu_pra">
         <activity android:name=".DTO.ChattingActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

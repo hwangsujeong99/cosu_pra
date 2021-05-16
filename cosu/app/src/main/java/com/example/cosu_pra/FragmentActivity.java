@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class FragmentActivity extends AppCompatActivity {
     HelpPosting helpPost;
     Map<String, ProjectPost> posts;
     ProjectFragment projectFragment;
