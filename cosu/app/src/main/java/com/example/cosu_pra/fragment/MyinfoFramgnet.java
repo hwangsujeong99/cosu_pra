@@ -1,4 +1,4 @@
-package com.example.cosu_pra.DTO.fragment;
+package com.example.cosu_pra.fragment;
 
 import android.os.Bundle;
 
