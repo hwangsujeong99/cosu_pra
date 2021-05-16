@@ -3,21 +3,18 @@ package com.example.cosu_pra;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.cosu_pra.DTO.ProjectPost;
-import com.example.cosu_pra.DTO.fragment.ChatFragment;
-import com.example.cosu_pra.DTO.fragment.MyinfoFramgnet;
-import com.example.cosu_pra.DTO.fragment.ProjectFragment;
-import com.example.cosu_pra.DTO.fragment.QnAFragment;
-import com.example.cosu_pra.DTO.fragment.StudyFragment;
+import com.example.cosu_pra.fragment.ChatFragment;
+import com.example.cosu_pra.fragment.MyinfoFramgnet;
+import com.example.cosu_pra.fragment.ProjectFragment;
+import com.example.cosu_pra.fragment.QnAFragment;
+import com.example.cosu_pra.fragment.StudyFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Map;
-
-import static com.example.cosu_pra.R.id.project_recruit;
 
 public class MainActivity extends AppCompatActivity {
     HelpPosting helpPost;

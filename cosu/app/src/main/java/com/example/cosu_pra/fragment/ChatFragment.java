@@ -1,4 +1,4 @@
-package com.example.cosu_pra.DTO.fragment;
+package com.example.cosu_pra.fragment;
 
 import android.os.Bundle;
 
@@ -14,8 +14,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cosu_pra.R;
-
-import java.util.ArrayList;
 
 public class ChatFragment extends Fragment {
 
