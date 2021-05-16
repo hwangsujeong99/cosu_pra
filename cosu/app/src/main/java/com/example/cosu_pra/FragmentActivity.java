@@ -27,7 +27,7 @@ public class FragmentActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragement);
+        setContentView(R.layout.activity_fragment);
         getSupportFragmentManager().beginTransaction().replace(R.id.project_recruit, new ProjectFragment()).commit();
         projectFragment = new ProjectFragment();
         studyFragment = new StudyFragment();
