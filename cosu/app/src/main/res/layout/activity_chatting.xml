@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DTO.ChattingActivity">
+
+    <RelativeLayout
+        android:id="@+id/chatroomRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/chatname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="채팅방 이름"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/chatroomspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"/>
+        <View
+            android:layout_alignBottom="@id/chatname"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#5E5E5E" />
+    </RelativeLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/chatroomRV"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile1_picture"
+            android:src="@drawable/chatroomimg"
+            android:paddingLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/profile1_name"
+            android:text="상대방 이름"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#D9D9D9"
+            android:scaleType="center"
+            android:src="@drawable/add" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:background="@drawable/round"
+            android:hint="  메세지를 입력하세요." />
+
+        <ImageButton
+            android:id="@+id/sendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#D9D9D9"
+            android:scaleType="center"
+            android:src="@drawable/send" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
